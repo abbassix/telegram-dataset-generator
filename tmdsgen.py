@@ -39,7 +39,7 @@ def get_data(file_path):
 
     keys = chats[0].keys()
 
-    with open(f'dialogue/{group}', 'a', newline='') as output_file:
+    with open(f'dialogue/{group}.csv', 'a', newline='') as output_file:
         dict_writer = csv.DictWriter(output_file, keys)
         dict_writer.writeheader()
         dict_writer.writerows(chats)
